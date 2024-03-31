@@ -24,8 +24,10 @@ include "db_conn.php";
         </nav>
         <div>
             <h2>Search Bill by PO </h2>
-            <input name="donorSearchName" type="text"  placeholder="Enter Bill no..." id="searchDonor" onkeyup="ajaxBillSearch()">
-            <input type="button" value="Search" id="btn-search">
+            <input name="poSearchName" type="text"  placeholder="Enter PO no..." id="searchByPO" onkeyup="ajaxPOSearch()">
+            <input name="vendorSearchName" type="text"  placeholder="Enter Vendor name..." id="searchByVendor" onkeyup="ajaxVendorSearch()">
+            <input name="locationSearchName" type="text"  placeholder="Enter Location..." id="searchByLocation" onkeyup="ajaxLocationSearch()">
+            <!-- <input type="button" value="Search" id="btn-search"> -->
         </div>
 
         <!-- Add new button -->
@@ -38,8 +40,8 @@ include "db_conn.php";
                 <tr>
                     <th scope="col">Serial</th>
                     <th scope="col">Bill/PO</th>
-                    <th scope="col">Vendor</th>
                     <th scope="col">Location</th>
+                    <th scope="col">Vendor</th>
                     <th scope="col">Description</th>
                     <th scope="col">Date</th>
                     <th scope="col">Received_By</th>
